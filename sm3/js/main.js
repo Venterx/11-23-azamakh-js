@@ -29,8 +29,10 @@ if (exp < 3) {
   const names = developers.map(developer => developer.name);
   
   let i = 0;
-  while (i < 4) {
+  while (i < developers.length) {
     console.log(alert(`${names[i]}: Привет!`));
     i++;
   }
+
+
 }
