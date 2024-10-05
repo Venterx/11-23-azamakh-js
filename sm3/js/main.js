@@ -6,7 +6,32 @@ const developers = [
   { name: 'Пётр', surname: 'Шереметьев', age: 19 },
 ];
 
+const newDeveloper = {
+  name: prompt('HR: Как Вас зовут?'), 
+  surname: prompt('HR: Какая у Вас фамилия?'), 
+  age: prompt('HR: Сколько Вам лет?'), 
+};
+
+let exp;
+
+// Проверка на то, что мы вводим именно число
+while (!Number.isInteger(parseInt(exp))) {
+  exp = prompt('HR: Сколько лет опыта в it?');
+}
+
+if (exp < 3) {
+  alert('HR: Прости, но у тебя слишком мало опыта :(');
+} else {
+  alert("Lead: Добро пожаловать в команду!");
+  alert("Lead: Поприветствуйте нового коллегу!");}
+const newDev = {
+  name: 'John123', surname: 'Doe123', age: 21
+}
+
+developers.push(newDeveloper);
 
 developers.map((obj) => { 
   alert(obj.name + " Привет")
+  
 })
+
