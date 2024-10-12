@@ -1,5 +1,5 @@
 document.getElementById('productForm').addEventListener('submit', async function(event) {
-    event.preventDefault(); // Предотвращаем стандартное поведение формы
+    event.preventDefault(); 
 
     const product = {
         title: document.getElementById('title').value,
