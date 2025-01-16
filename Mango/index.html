@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/main.js" defer></script>
+  <title>Mango</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="header-logo">
+        <a href="#">
+          <img src="./assets/images/logotype/mango.jpg" alt="logo">
+        </a>
+      </div>
+      <div class="header-nav">
+        <a href="#">Главная</a>
+        <a href="#">Каталог</a>
+        <a href="#">О нас</a>
+        <a href="#">Помощь</a>
+      </div>
+      <div class="header-navigation">
+        <a href="#">Главная</a>
+        <a href="#">Каталог</a>
+        <a href="#">О нас</a>
+        <a href="#">Помощь</a>
+      </div>
+      <div class="header-profile">
+        <a href="#">
+          <img src="./assets/images/icons/user.webp" alt="profile" class="profile">
+        </a>
+      </div>
+      <div class="header-burger">
+        <span onclick="burger(event)">
+          <img src="./assets/images/icons/Hamburger_icon.svg.png" alt="burger" class="burger">
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner">
+   <img src="./assets/images/card/banner.jpg" alt="banner" class="ban">
+
+  <section class="catalog">
+    <div class="services__wrapper">
+      <article class="service">
+        <img class="service__cover" src="./assets/images/card/sofa.jfif" alt="card image">
+        <div class="service__content">
+          <p class="service__title">Диван</p>
+          <p class="service__description">Удобная мебель </p>
+          <p class="service__price">1000 руб.</p>
+          <button class="service__button">
+            Купить
+          </button>
+        </div>
+      </article>
+      <article class="service">
+        <img class="service__cover" src="./assets/images/card/table.jpg" alt="card image">
+        <div class="service__content">
+          <p class="service__title">Стол</p>
+          <p class="service__description">Удобная мебель </p>
+          <p class="service__price">5000 руб. </p>
+          <button class="service__button">
+            Купить
+          </button>
+        </div>
+      </article>
+      <article class="service">
+        <img class="service__cover" src="./assets/images/card/chair.jpg" alt="card image">
+        <div class="service__content">
+          <p class="service__title">Стул</p>
+          <p class="service__description">Удобная мебель </p>
+          <p class="service__price">7000 руб.</p>
+          <button class="service__button">
+            Купить
+          </button>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="about-us">
+    <div class="about-container">
+      <h2>О нас</h2>
+      <p>Мы предлагаем лучшие товары на рынке.</p>
+      <img src="./assets/images/card/about.jpg" alt="О нас">
+    </div>
+  </section>
+  <section class="faq">
+    <button class="accordion">вопрос</button>
+      <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion">вопрос</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion">вопрос</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <div class="modal-window">
+        <p class="">Вы хотите удалить ФРЕДА УРОВА???</p>
+        <button onclick="closeModal()">ЖМИ СЮДА!!!</button>
+        <button class="remove-btn" onclick="removeFREDUROV()">удалить</button>
+      </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+    <div class="footer-logo">
+      <img src="./assets/images/logotype/mango.jpg" alt="">
+    </div>
+        <div class="modal-btn">
+            <button onclick="openModal()">📞 Позвонить</button>
+        </div>
+      </div>
+  </footer>
+
+
+  <div class="modal-window">
+    <p class="">880005553535</p>
+    <button>позвонить</button>
+    <button onclick="closeModal()">закрыть</button>
+    
+  </div>
+</body>
+
+</html>

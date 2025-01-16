@@ -1,0 +1,335 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url('../fonts/OpenSans-Variable.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "OpenSans";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color:lightgray;
+}
+
+button {
+  font-size: 1rem;
+  background: darkgrey  ;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  transition: 0.4s ease-out;
+}
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  height: 150px;
+}
+
+.header-container {
+  margin: 0 auto;
+  width: 1680px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  height: 130px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+
+
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  height: 30px;
+}
+
+.header-navigation {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 40px 40px;
+  flex-direction: column;
+  gap: 15px;
+  background-color: black;
+}
+
+.header-navigation a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.profile{
+  width: 65px;
+  height: 40px;
+  
+}
+
+.header-burger {
+  display: none;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  
+}
+
+
+
+
+
+
+
+
+
+.banner {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.ban {
+  width: 100%;
+
+}
+
+
+
+
+
+.services {
+  padding-top: 4rem;
+}
+
+.services__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  margin-top: 50px;
+}
+
+.service {
+  border-radius: 0.8rem;
+  background: #1e1e1e;
+  overflow: hidden;
+}
+
+.service__cover {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  height:250px;
+}
+
+.service__content {
+  padding: 1rem;
+  background-color: gray;
+}
+
+.service__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.service__description {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: #c4c4c4;
+}
+
+.service__price {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.service__button {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.about-container {
+
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 1440px;
+}
+
+.about-us img {
+  width: 100%;
+
+}
+
+.about-us p {
+  font-size: 24px;
+}
+
+
+.faq  {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+
+.footer {
+  width: 100%;
+  background-color: #fff;
+  height: 150px;
+}
+
+
+
+.footer-container {
+  margin: 0 auto;
+  width: 1680px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  height: 130px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+
+
+.accordion {
+  background-color: lightgrey;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.active, .accordion:hover {
+  background-color: darkgrey; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+
+
+.modal-window {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  z-index: 40;
+  top: calc(50% - 250px);
+  left: calc(50% - 175px);
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.modal-window p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-btn {
+  padding-bottom: 30px;
+}
+
+.open {
+  display: flex;
+}
+
+.close {
+  display: none;
+}
+
+
+.open {
+  display: flex;
+}
+
+.close {
+  display: none;
+}
+
+@media (max-width: 1800px) {
+  .header {
+    width: 1800px;
+  }
+
+  .header-container {
+    width: 1380px;
+    
+  }
+
+  .header-burger {
+    display: block;
+  }
+
+  .header-profile {
+    display: none;
+  }
+
+  .header-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 1600px) {
+  .header {
+    width: 1600px;
+  }
+
+  .header-container {
+    width: 1180px;
+    
+  }
+}
